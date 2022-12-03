@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <title>Bubbling and Capturing</title>
+    <style>
+        div{
+            min-height: 100px;
+            min-width: 100px;
+            padding: 30px;
+            border: 1px solid black;            
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="grandparent">
+      <div id="parent">
+        <div id="child"></div>
+      </div>
+    </div>
+    <script src="eventpropagation.js"></script>
+  </body>
+</html>
+
+// basically there are two things bubbling and capturing(trickling)
+// bubbling m outside jate hai in heirarchy but
+// in tricking we came in from outside to inside here
